@@ -48,5 +48,14 @@ jobs:
       
     - name: Impressora 2
       run: echo impressora ocupada
-      
+  
+  final-job:
+    name: último job
+    runs-on: ubuntu-latest
+    needs:
+      - hello-world
     
+    steps:
+      - name: imprime mensagem final
+        run: echo step final
+      
