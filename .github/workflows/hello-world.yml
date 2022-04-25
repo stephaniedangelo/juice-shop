@@ -39,8 +39,6 @@ jobs:
   printer:
     name: impressoras
     runs-on: ubuntu-latest
-    needs:
-      - hello-world
     
     steps:
     - name: Impressora 1
