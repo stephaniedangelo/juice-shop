@@ -23,7 +23,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: check-out hello-world
+      - name: check-out repo
         uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
@@ -35,3 +35,15 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+  printer:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Impressora 1
+      run: echo impressora disponivel
+      
+    - name: Impressora 2
+      run: echo impressora ocupada
+      
+    
